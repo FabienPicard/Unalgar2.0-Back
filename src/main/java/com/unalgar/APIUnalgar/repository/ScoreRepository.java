@@ -10,6 +10,5 @@ import java.util.List;
 public interface ScoreRepository extends JpaRepository<Score, Long> {
 
     List<Score> findTop3ByCardTypeOrderByScoreDesc(String a);
-    Score findTopByCardTypeOrderByScoreDesc(String a);
 
 }
